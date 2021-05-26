@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVER</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="naver.css">
+    <link rel="stylesheet" href="./naver.css">
+    <link rel="stylesheet" href="./font.css">
 </head>
 <body>
     <header>
         <div id="header-center"> <!--가운데 정렬용 div-->
-            <h1><a href="https://www.naver.com">네이버</a></h1>
-            <h2>검색창</h2>
+            <div>  <!--맨위 조그만 글씨들-->
+                <span>네이버를 시작페이지로</span>
+                <span>쥬니버네이버</span>
+                <span>해피빈</span>
+            </div>
+            <div id = "header-search">
+                <div id = "header-logo">
+                    <h1><a href="https://www.naver.com">네이버</a></h1>
+                </div>
+            <h2 class="blind"> 검색창</h2>
             <fieldset>
-                <legend>검색</legend>
-                <input type="text" placeholder="검색어를 입력해 주세요.">
-                <br>
-                <button>검색</button>
-            </fieldset>
+                <legend class="blind">검색</legend>
+                <input type="text">
+                <button>
+                  <span class="blind">검색</span>
+                  <span id="search-image"></span>
+                </button>
+              </fieldset>
+            </div>
         </div>
     </header>
     <nav>
-        <ul>
+        <ul> <!--ul은 순서없는 리스트 ol은 순서 있는거-->
             <li>메일</li>
             <li>카페</li>
             <li>블로그</li>
@@ -44,19 +56,21 @@
         </ul>
     </nav>
     <main>
-        <h2>뉴스스탠드</h2>
+        <h2>실시간 검색어</h2>
+        <h3>연합뉴스</h3>
         <ol>
             <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-        </ol>  
+            <li>충격) 이지호 집에서 공부 하는중...</li>
+            <li>속보) 이지호 밖에 나가고 싶어...</li>
+            <li>속보) 이지호 운동 하고자 결심...</li>
+            <li>충격) 헬스장 가격 6개월 25만원...</li>
+            <li>속보) 이지호 고민중...</li>
+            <li>중대발표) 이지호 헬스장 결제해...</li>
+            <li>속보) 이지호 커피 마시는중...</li>
+        </ol> 
+
+        <h2>뉴스스탠드</h2>
+ 
         <h3>언론사 목록</h3>
             <ul>
                 <li><img src="./국민일보.png" alt ="국민일보"></li>
@@ -70,7 +84,6 @@
                 <li><img src="./프레시안.png" alt ="프레시안"></li>
                 <li><img src="./한국경제.png" alt ="한국경제"></li>
                 <li><img src="./해럴드경제.png" alt ="헤럴드경제"></li>
-
             </ul>
         <h2>실시간 검색어</h2>
         <h3>로그인</h3>
