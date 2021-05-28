@@ -16,8 +16,8 @@
           <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
           <!-- 인라인 스타일 -->
           <div>
-            <span>네이버를 시작페이지로</span>
-            <span>쥬니어네이버</span>
+            <span>네이버를 시작페이지로 | </span>
+            <span>쥬니어네이버 | </span>
             <span>해피빈</span>
           </div>
           <div id="header-search">
@@ -30,6 +30,8 @@
             <fieldset>
               <legend class="blind">검색</legend>
               <input />
+              <span id="search-keyboard"></span>
+              <span id="search-history"></span>
               <button>
                 <span class="blind">검색</span>
                 <span id="search-image"></span>
@@ -42,11 +44,11 @@
         <div class="center-align relative">
           <div id="search-ranking">
             <h2 class="blind">실시간 검색어</h2>
-            <ul>
-              <li>이지호</li>
-            </ul>
+            <span id = "rank-number">1</span>
+            <span id = "rank-title">이지호</span>
           </div> <!--ul은 순서없는 리스트 ol은 순서 있는거-->
-          <ul>
+         
+          <ul> <!--첫번째 span은 이미지용, 두번째는 시각장애인용-->
             <li><a href=""><span></span><span class="blind">메일</span></a></li>
             <li><a href=""><span></span><span class="blind">카페</span></a></li>
             <li><a href=""><span></span><span class="blind">블로그</span></a></li>
@@ -54,21 +56,35 @@
             <li><a href=""><span></span><span class="blind">쇼핑</span></a></li>
             <li><a href=""><span></span><span class="blind">.Pay</span></a></li>
             <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li>
-          </ul>
+            <li><a href=""><span></span><span class="blind">네이버TV</span></a></li>
+            <li><a href=""><span></span><span class="blind">사전</span></a></li>
+            <li><a href=""><span></span><span class="blind">증권</span></a></li>
+            <li><a href=""><span></span><span class="blind">부동산</span></a></li>
+            <li><a href=""><span></span><span class="blind">지도</span></a></li>
+            <li><a href=""><span></span><span class="blind">영화</span></a></li>
+            <li><a href=""><span></span><span class="blind">뮤직</span></a></li>
+            <li><a href=""><span></span><span class="blind">책</span></a></li>
+            <li><a href=""><span></span><span class="blind">웹툰</span></a></li>
+          </ul> <!--이렇게 해서 nth-child 로 해도 되는데 id값 지정해주는게 유지보수에 좋음-->
+          <div class="nav-divier">
+            <ul><li class="more"><a href=""><span></span><span class="blind">더보기</span></a></li></ul>
+          </div>
         </div>
       </nav>
-        <h3>연합뉴스</h3>
-        <ol>
-            <li>충격) 이지호 집에서 숨쉰채 발견...</li>
-            <li>충격) 이지호 집에서 공부 하는중...</li>
-            <li>속보) 이지호 밖에 나가고 싶어...</li>
-            <li>속보) 이지호 운동 하고자 결심...</li>
-            <li>충격) 헬스장 가격 6개월 25만원...</li>
-            <li>속보) 이지호 고민중...</li>
-            <li>중대발표) 이지호 헬스장 결제해...</li>
-            <li>속보) 이지호 커피 마시는중...</li>
-        </ol> 
-
+      <main>
+        <div class ="center-align">
+          <h3>연합뉴스</h3>
+          <ol>
+              <li>충격) 이지호 집에서 숨쉰채 발견...</li>
+              <li>충격) 이지호 집에서 공부 하는중...</li>
+              <li>속보) 이지호 밖에 나가고 싶어...</li>
+              <li>속보) 이지호 운동 하고자 결심...</li>
+              <li>충격) 헬스장 가격 6개월 25만원...</li>
+              <li>속보) 이지호 고민중...</li>
+              <li>중대발표) 이지호 헬스장 결제해...</li>
+              <li>속보) 이지호 커피 마시는중...</li>
+          </ol> 
+      </div>
         <h2>뉴스스탠드</h2>
  
         <h3>언론사 목록</h3>
@@ -88,7 +104,7 @@
         <h3>로그인</h3>
         <h3>법률</h3>
         <h3>쇼핑</h3>
-        </main>
+      </main>
     <footer>
         <div>공지사항</div>
         <div>Creaters</div>
