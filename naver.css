@@ -5,6 +5,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.inline-block {
+    display: inline-block;
 }
 #fixed{
     position: fixed;
@@ -46,18 +53,13 @@ header {
     line-height: 22px;
 }
 
-#header-center {
-    margin: 0 auto;
-    width: 1080px;
-}
-
 #header-search a {
     text-decoration: none;
 }
 
 #header-search h1 {
     width: 198px;
-    height: 48px;
+    height: 45px;
     display: inline-block;
     /*background (image,position,repect)을 한번에 적을수잇음 */
     background: url(./sp_search.png) -4px -4px no-repeat;
@@ -77,12 +79,12 @@ header {
 #header-search fieldset {
     margin-left: 20px;
     padding: 12px 0 12px 10px;
-    /*padding 순서대로 top bottom left right*/
+    /*padding 순서대로 top left bottom right*/
     width: 521px;
     height: 49px;
     display: inline-block;
-    border: 4px solid #03cf5d; 
-    /* 다 같으면 2px 한번에 가능 */
+    border: 2px solid #03cf5d; 
+    /* 상하좌우가 다 같으면 2px 한번에 가능 */
     vertical-align: middle;
     position: relative;
 }
@@ -92,7 +94,7 @@ header {
     padding: 0;
     outline: none;
     vertical-align: top;
-    width: 405px;
+    width: 395px;
     height: 23px;
 }
 
@@ -107,6 +109,28 @@ header {
     top: -2px;
 }
 
+#search-keyboard {
+    background-image: url(./sp_search.png);
+    background-repeat: no-repeat;
+    background-position: -33px -60px;
+    width: 19px;
+    height: 11px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+
+#search-history {
+    background-image: url(./sp_search.png);
+    background-repeat: no-repeat;
+    background-position: -87px -60px;
+    width: 9px;
+    height: 4px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+
 #search-image {
     background: url(./sp_search.png) -3px -60px no-repeat;
     width: 21px;
@@ -114,8 +138,14 @@ header {
     display: inline-block;
     margin: 14px;
 }
+nav {
+    height: 46px;
+    border-top: 1px solid #d1d8e4;
+    border-bottom: 1px solid #d1d8e4;
+}
 
 nav ul {
+    display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -124,10 +154,11 @@ nav li {
     display: inline-block;
 }
 
+
 nav li span:first-child{
     height: 16px;
     display: inline-block;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
+    background-image: url(./sp_nav.png);
     background-repeat: no-repeat;
     margin-left: 14px;
 }
@@ -235,4 +266,143 @@ nav li.more:first-child span:first-child {
 #rank-title {
     letter-spacing: -1px;
     font-size: 14px;
+}
+
+main {
+    background-color: #f2f4f7;
+    display: inline-block;
+    width: 100%;
+}
+
+#main-centered {
+    padding: 8px 10px;
+    width: 1100px;
+}
+#main-first-block {
+    display: inline-block;
+    width: 100%;
+}
+
+#main-ad {
+    float: left;
+    width: 740px;
+    height: 120px;
+    background: #555;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#main-login {
+    float: left;
+    width: 332px;
+    height: 120px;
+    vertical-align: top;
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+#main-second-block .inline-block:first-child {
+    width: 740px;
+}
+
+#main-second-block .inline-block:last-child {
+    width: 332px;
+    vertical-align: top;
+}
+#main-ytn {
+    display: inline-block;
+    width: 740px;
+    height: 46px;
+    background-color: white;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#main-ytn h3,
+#main-ytn ol {
+    display: inline-block;
+}
+
+
+#main-newsstand {
+    display: inline-block;
+    width: 740px;
+    height: 246px;
+    background-color: white;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+#main-newstand h3 {
+    height: 45px;
+    border-bottom: 1px solid #ebeef3;
+}
+
+#main-newstand ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main-newstand li {
+    float: left;
+    width: 123px;
+    height: 67px;
+    border-right: 1px solid #f1f3f6;
+    border-bottom: 1px solid #f1f3f6;
+    text-align: center;
+}
+#main-newstand li img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#main-weather {
+
+    display: inline-block;
+    width: 332px;
+    height: 142px;
+    background-color: white;
+    margin-bottom: 8px;
+}
+#main-second-ad {
+    display: inline-block;
+    width: 332px;
+    height: 150px;
+    background: #555;
+    margin-bottom: 8px;
+}
+#main-category {
+    float: left;
+    width: 740px;
+    height: 837px;
+    background: white;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+#main-shopping {
+    float: left;
+    width: 332px;
+    height: 837px;
+    background: white;
+    margin-bottom: 8px;
+}
+#main-third-block,
+#main-fourth-block {
+    display: inline-block;
+    width: 100%;
+}
+#main-event {
+    float: left;
+    width: 740px;
+    height: 130px;
+    background: white;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+#main-third-ad {
+    float: left;
+    width: 332px;
+    height: 130px;
+    background: #555;
 }
