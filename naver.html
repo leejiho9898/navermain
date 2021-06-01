@@ -43,11 +43,54 @@
         <div class="center-align relative">
           <div id="search-ranking">
             <h2 class="blind">실시간 검색어</h2>
-            <span id = "rank-number">1</span>
-            <span id = "rank-title">이지호</span>
+            <div>
+              <span id = "rank-number">1</span>
+              <span id = "rank-title">이지호</span>
+            </div>
+            <ul>
+              <li>
+                <span id = "rank-number">1</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>
+                <span id = "rank-number">2</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>
+                <span id = "rank-number">3</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>
+                <span id = "rank-number">4</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>
+                <span id = "rank-number">5</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>
+                <span id = "rank-number">6</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>
+                <span id = "rank-number">7</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>
+                <span id = "rank-number">8</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+              <li>              
+                <span id = "rank-number">9</span>
+                <span id = "rank-title">이지호</span></li>
+              <li>
+                <span id = "rank-number">10</span>
+                <span id = "rank-title">이지호</span>
+              </li>
+            </ul>
           </div> <!--ul은 순서없는 리스트 ol은 순서 있는거-->
          
-          <ul> <!--첫번째 span은 이미지용, 두번째는 시각장애인용-->
+          <<ul id="nav-menu">> <!--첫번째 span은 이미지용, 두번째는 시각장애인용-->
             <li><a href=""><span></span><span class="blind">메일</span></a></li>
             <li><a href=""><span></span><span class="blind">카페</span></a></li>
             <li><a href=""><span></span><span class="blind">블로그</span></a></li>
@@ -74,7 +117,21 @@
         <div id="main-centerd" class ="center-align">
           <div id="main-first-block">
             <div id="main-ad"></div>
-            <div id="main-login"><h3>로그인</h3></div>
+            <div id="main-login">
+              <h3 class="blind">로그인</h3>
+              <div class="login-wrapper">
+                <span class="login-text">네이버를 더 안전하고 편리하게 이용 하세요</span>
+                <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+                  <span class="blind">NAVER 로그인</span>
+                  <span class="login-image"></span>
+                </a>
+                <a
+                class="login-signup"
+                href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com">
+                회원가입
+                </a>
+              </div>
+            </div>
           </div>
           <div id="main-second-block">
             <div class="inline-block">
@@ -108,17 +165,21 @@
                 </ul>
               </div>
             </div>
-            <div class="inline-block">
+            <div class="float-left">
               <div id="main-weather"></div>
               <div id="main-second-ad"></div>
             </div>
           </div>
           <div id="main-third-block">
-            <div id="main-category">
+            <div id="main-category"></div>
               <h3>주제별 보기</h3>
             </div>
             <div id="main-shopping">
-              <h3>쇼핑</h3>
+              <iframe 
+              src="https://castbox.shopping.naver.com/shopbox/main.nhn?" 
+              frameborder="0" 
+              scrolling="no"
+              ></iframe>
             </div>
           </div>
           <div id="main-fourth-block">
